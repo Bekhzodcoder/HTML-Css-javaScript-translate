@@ -111,4 +111,8 @@ button{
     .controls li:nth-child(1){
         flex-flow: row-reverse;
     }
+
+    .text-input textarea{
+        width: 85%;
+    }
 }

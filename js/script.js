@@ -35,7 +35,6 @@ translateBtn.addEventListener("click", ()=>{
     toText.setAttribute("placeholder", "Translating...")
     let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
     fetch(apiUrl).then(res => res.json()).then(data =>{
-        console.log(data)
         toText.value = data.responseData.translatedText;
         toText.setAttribute("placeholder", "Translation")
     })
